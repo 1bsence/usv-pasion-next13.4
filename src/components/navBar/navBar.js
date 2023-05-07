@@ -1,4 +1,3 @@
-
 export default function NavBar() {
   return (
     <nav className="flex flex-row flex-wrap sm:justify-center justify-evenly space-x-4">
@@ -6,8 +5,9 @@ export default function NavBar() {
         ["Home", "/"],
         ["Orar", "/"],
         ["Pasionati", "/pasionati"],
-      ].map(([title, url]) => (
+      ].map(([title, url], index) => (
         <a
+          key={index}
           href={url}
           className="rounded-lg px-3 py-2  font-medium hover:bg-slate-100 hover:text-black"
         >
