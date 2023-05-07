@@ -44,7 +44,6 @@ export default function Orar() {
 
     cursuri = orarJ[ziua];
   }, [ziua, orarJ]);
-  console.log(cursuri);
   // var [cursuri, changeCurs] = useState(orarJ[ziua]);
   return (
     <>
