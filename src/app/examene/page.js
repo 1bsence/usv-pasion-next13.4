@@ -19,13 +19,4 @@ export default function Examene() {
   );
 }
 
-export function timp(examen) {
-  const currDate = new Date();
-  var delta = new Date(examen - currDate);
-  return {
-    zile: Math.floor((examen - currDate) / (24 * 60 * 60 * 1000)) - 29,
-    ore: delta.getHours(),
-    minute: delta.getMinutes(),
-    secunde: delta.getSeconds(),
-  };
-}
+
