@@ -2,8 +2,8 @@ export default function NavBar() {
   return (
     <nav className="flex flex-row flex-wrap sm:justify-center justify-evenly space-x-4">
       {[
-        ["Home", "/"],
         ["Orar", "/"],
+        ["Examene", "/examene"],
         ["Pasionati", "/pasionati"],
       ].map(([title, url], index) => (
         <a

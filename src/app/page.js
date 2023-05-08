@@ -16,10 +16,10 @@ export default function Orar() {
   ];
   var [orarJ, changeOrar] = useState(JSON.parse(JSON.stringify(orar3211b)));
   var [ziua, changeZi] = useState(() => {
-    if (date.getDay() > 5 || date.getDay()=== 0 ) {
+    if (date.getDay() > 5 || date.getDay() === 0 ) {
       return "vineri";
     } else {
-      return zile[date.getDay() - 1];
+      return zile[date.getDay() - 1].id;
     }
   });
   var [week, changeWeek] = useState(() => {
