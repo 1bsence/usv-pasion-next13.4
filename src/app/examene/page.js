@@ -8,7 +8,7 @@ const engleza = new Date(2023, 6, 13);
 export default function Examene() {
   return (
     <>
-      <div className="flex justify-center items-center flex-wrap">
+      <div className="flex justify-evenly items-center flex-wrap">
         <ExaCom examen={mate} text="Mate" />
         <ExaCom examen={pclp2} text="PCLP2" />
         <ExaCom examen={arca} text="ARCA" />
@@ -18,5 +18,3 @@ export default function Examene() {
     </>
   );
 }
-
-
