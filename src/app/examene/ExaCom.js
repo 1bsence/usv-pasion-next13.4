@@ -1,3 +1,4 @@
+"uss client";
 export function ExaCom({ examen, text }) {
   return (
     <div className="flex justify-evenly m-3 p-2 border border-dotted border-cyan-700 bg-slate-900">
@@ -14,10 +15,14 @@ export function ExaCom({ examen, text }) {
 function timp(examen) {
   const currDate = new Date();
   var delta = new Date(examen - currDate);
+  var zile = Math.floor((examen - currDate) / (24 * 60 * 60 * 1000)) - 29;
+  var ore = delta.getHours();
+  var minute = delta.getMinutes();
+  var secunde = delta.getSeconds();
   return {
-    zile: Math.floor((examen - currDate) / (24 * 60 * 60 * 1000)) - 29,
-    ore: delta.getHours(),
-    minute: delta.getMinutes(),
-    secunde: delta.getSeconds(),
+    zile: zile,
+    ore: ore,
+    minute: minute,
+    secunde: secunde,
   };
 }
