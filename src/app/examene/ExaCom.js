@@ -7,7 +7,6 @@ export function ExaCom({ examen, text }) {
         <li>Zile: {timp(examen).zile}</li>
         <li>Ore: {timp(examen).ore}</li>
         <li>Minute: {timp(examen).minute}</li>
-        <li>Secunde: {timp(examen).secunde}</li>
       </ul>
     </div>
   );
@@ -18,11 +17,9 @@ function timp(examen) {
   var zile = Math.floor((examen - currDate) / (24 * 60 * 60 * 1000)) - 29;
   var ore = delta.getHours();
   var minute = delta.getMinutes();
-  var secunde = delta.getSeconds();
   return {
     zile: zile,
     ore: ore,
     minute: minute,
-    secunde: secunde,
   };
 }
