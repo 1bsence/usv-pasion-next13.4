@@ -19,7 +19,7 @@ export default function Orar() {
     if (date.getDay() > 5 || date.getDay()=== 0 ) {
       return "vineri";
     } else {
-      return zile[date.getDay() - 1];
+      return zile[date.getDay() - 1].id;
     }
   });
   var [week, changeWeek] = useState(() => {
