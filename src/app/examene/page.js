@@ -1,3 +1,5 @@
+import { ExaCom } from "./ExaCom";
+
 const mate = new Date(2023, 6, 22);
 const pclp2 = new Date(2023, 6, 29);
 const arca = new Date(2023, 7, 3);
@@ -17,7 +19,7 @@ export default function Examene() {
   );
 }
 
-function timp(examen) {
+export function timp(examen) {
   const currDate = new Date();
   var delta = new Date(examen - currDate);
   return {
@@ -26,18 +28,4 @@ function timp(examen) {
     minute: delta.getMinutes(),
     secunde: delta.getSeconds(),
   };
-}
-
-export function ExaCom({ examen, text }) {
-  return (
-    <div className="flex justify-evenly m-3 p-2 border border-dotted border-cyan-700 bg-slate-900">
-      <label className="m-2 text-lg">{text}:</label>
-      <ul>
-        <li>Zile: {timp(examen).zile}</li>
-        <li>Ore: {timp(examen).ore}</li>
-        <li>Minute: {timp(examen).minute}</li>
-        <li>Secunde: {timp(examen).secunde}</li>
-      </ul>
-    </div>
-  );
 }
