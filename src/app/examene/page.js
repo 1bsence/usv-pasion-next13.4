@@ -7,11 +7,11 @@ export default function Examene() {
   return (
     <>
       <div className="flex justify-center items-center flex-wrap">
-        <ExaCom examen={mate}/>
-        <ExaCom examen={pclp2}/>
-        <ExaCom examen={arca}/>
-        <ExaCom examen={coomunicare}/>
-        <ExaCom examen={engleza}/>
+        <ExaCom examen={mate} text="Mate" />
+        <ExaCom examen={pclp2} text="PCLP2" />
+        <ExaCom examen={arca} text="ARCA" />
+        <ExaCom examen={coomunicare} text="COM" />
+        <ExaCom examen={engleza} text="ENG" />
       </div>
     </>
   );
@@ -28,10 +28,10 @@ function timp(examen) {
   };
 }
 
-export function ExaCom({examen}){
+export function ExaCom({ examen, text }) {
   return (
     <div className="flex justify-evenly m-3 p-2 border border-dotted border-cyan-700 bg-slate-900">
-      <label className="m-2 text-lg">Mate:</label>
+      <label className="m-2 text-lg">{text}:</label>
       <ul>
         <li>Zile: {timp(examen).zile}</li>
         <li>Ore: {timp(examen).ore}</li>
