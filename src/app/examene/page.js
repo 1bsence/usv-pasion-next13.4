@@ -6,7 +6,7 @@ const mate = new Date(2023, 6, 22);
 const pclp2 = new Date(2023, 6, 29);
 const arca = new Date(2023, 7, 3);
 const coomunicare = new Date(2023, 6,13);
-const engleza = new Date(2023, 6, 13);
+const engleza = new Date(2023, 5,16);
 export default function Examene() {
   return (
     <>
