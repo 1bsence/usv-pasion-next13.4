@@ -13,9 +13,9 @@ export default function Examene() {
     <>
       <div className="flex justify-evenly items-center flex-wrap">
         <ExaCom examen={mate} text="Mate" />
-        <ExaCom examen={pclp2} text="PCLP2 - Test" />
+        <ExaCom examen={pclp2} text="PCLP2" />
 
- <ExaCom examen={pclp2_test2} text="PCLP2" />
+ <ExaCom examen={pclp2_test2} text="PCLP2 - Test" />
         <ExaCom examen={arca} text="ARCA" />
         <ExaCom examen={coomunicare} text="COM" />
         <ExaCom examen={engleza} text="ENG" />
