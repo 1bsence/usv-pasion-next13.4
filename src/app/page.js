@@ -25,7 +25,7 @@ export default function Orar() {
   var [week, changeWeek] = useState(() => {
     var startDate = new Date(date.getFullYear(), 3, 29);
     var days = Math.floor((date - startDate) / (24 * 60 * 60 * 1000));
-    return Math.ceil(days / 7) + 7;
+    return Math.ceil(days / 7);
   });
   let cursuri = orarJ[ziua];
   useEffect(() => {
