@@ -3,59 +3,67 @@
 		{
 			"ora": 8,
 			"lungime": 2,
-			"tip": "curs",
-			"ce": "Fiz1",
-			"unde": "A aula",
-			"special": "0"
+			"tip": "sem",
+			"ce": "CEL1",
+			"unde": "C201",
+			"special": "1"
 		},
 		{
 			"ora": 10,
 			"lungime": 2,
-			"tip": "curs",
-			"ce": "MS",
-			"unde": "A aula",
+			"tip": "lab",
+			"ce": "CEL1",
+			"unde": "C101",
+			"special": "1"
+		},
+		{
+			"ora": 12,
+			"lungime": 2,
+			"tip": "lab",
+			"ce": "SDED",
+			"unde": "C301",
 			"special": "0"
 		},
 		{
 			"ora": 14,
 			"lungime": 2,
-			"tip": "lab",
-			"ce": "ArCa",
-			"unde": "C303",
+			"tip": "STC",
+			"ce": "STC",
+			"unde": "0",
 			"special": "0"
 		},
 		{
 			"ora": 16,
 			"lungime": 3,
 			"tip": "curs",
-			"ce": "ETH",
-			"unde": "D Amf. NB",
+			"ce": "SDED",
+			"unde": "C301",
 			"special": "0"
 		}
 	],
 	"marti": [
 		{
-			"ora": 11,
+			"ora": 10,
 			"lungime": 2,
-			"tip": "sem",
-			"ce": "Engl1",
-			"unde": "D010",
+			"tip": "lab",
+			"ce": "Fiz2",
+			"unde": "C405",
+			"special": "1"
+		},
+		{
+			"ora": 12,
+			"lungime": 2,
+			"tip": "curs",
+			"ce": "SuP",
+			"unde": "C407",
 			"special": "0"
 		},
 		{
-			"ora": 15,
+			"ora": 16,
 			"lungime": 2,
-			"tip": "curs",
-			"ce": "ArCa",
-			"unde": "D Amf. DH",
-			"special": "0"
-		},
-		{
-			"ora": 17,
-			"lungime": 3,
-			"tip": "curs",
-			"ce": "PCLP2",
-			"unde": "D Amf. DH",
+			"tip": "lab",
+			"ce": "TS1",
+			"unde": "C101",
 			"special": "0"
 		}
 	],
@@ -64,101 +72,69 @@
 			"ora": 8,
 			"lungime": 2,
 			"tip": "lab",
-			"ce": "PCLP2",
-			"unde": "C207",
+			"ce": "SuP",
+			"unde": "C407",
 			"special": "0"
 		},
 		{
-			"ora": 14,
-			"lungime": 2,
-			"tip": "sem",
-			"ce": "Com",
-			"unde": "D010",
-			"special": "0"
-		},
-		{
-			"ora": 16,
-			"lungime": 2,
+			"ora": 15,
+			"lungime": 3,
 			"tip": "curs",
-			"ce": "Peda",
-			"unde": "A112",
+			"ce": "TS1",
+			"unde": "A103",
 			"special": "0"
 		},
 		{
 			"ora": 18,
-			"lungime": 2,
-			"tip": "sem",
-			"ce": "Peda",
-			"unde": "A112",
+			"lungime": 3,
+			"tip": "curs",
+			"ce": "PCLP3",
+			"unde": "Aula",
 			"special": "0"
 		}
 	],
 	"joi": [
 		{
-			"ora": 8,
-			"lungime": 2,
-			"tip": "sem",
-			"ce": "ETH",
-			"unde": "D106",
-			"special": "1"
+			"ora": 11,
+			"lungime": 3,
+			"tip": "curs",
+			"ce": "CEL1",
+			"unde": "A103",
+			"special": "0"
 		},
 		{
-			"ora": 8,
-			"lungime": 2,
-			"tip": "lab",
-			"ce": "Fiz1",
-			"unde": "D008",
-			"special": "2"
-		},
-		{
-			"ora": 10,
-			"lungime": 2,
-			"tip": "sem",
-			"ce": "ETH",
-			"unde": "D106",
-			"special": "1"
-		},
-		{
-			"ora": 10,
+			"ora": 14,
 			"lungime": 2,
 			"tip": "lab",
-			"ce": "ETH",
-			"unde": "D009",
-			"special": "2"
+			"ce": "PCLP3",
+			"unde": "C203",
+			"special": "0"
 		},
 		{
-			"ora": 13,
-			"lungime": 1,
-			"tip": "AT",
-			"ce": "AT",
-			"unde": "C101",
-			"special": "2"
+			"ora": 16,
+			"lungime": 2,
+			"tip": "sem",
+			"ce": "Peda2",
+			"unde": "A112",
+			"special": "0"
+		}
+	],
+	"vineri": [
+		{
+			"ora": 8,
+			"lungime": 2,
+			"tip": "curs",
+			"ce": "Fiz2",
+			"unde": "ED042",
+			"special": "0"
 		},
 		{
 			"ora": 14,
 			"lungime": 2,
 			"tip": "sem",
-			"ce": "EdFiz1",
-			"unde": "K/Ts",
-			"special": "2"
-		}
-	],
-	"vineri": [
-		{
-			"ora": 10,
-			"lungime": 2,
-			"tip": "sem",
-			"ce": "CM",
-			"unde": "D Amf. NB",
-			"special": "0"
-		},
-		{
-			"ora": 15,
-			"lungime": 2,
-			"tip": "sem",
-			"ce": "MS",
-			"unde": "D107",
-			"special": "0"
+			"ce": "EdFiz2",
+			"unde": "Bazin",
+			"special": "1"
 		}
 	]
 }
