@@ -56,8 +56,8 @@ export default function Orar() {
               changeOrar((orarJ = JSON.parse(e.target.value)));
             }}
           >
-            <option value={JSON.stringify(orar3211b)}>3211b</option>
-            <option value={JSON.stringify(orar3211a)}>3211a</option>
+            <option value={JSON.stringify(orar3211b)}>3221b</option>
+            <option value={JSON.stringify(orar3211a)}>3221a</option>
           </select>
           {/* Display Sapt */}
           <h2 className="w-26 h-7 text-lg  bg-white text-black dark:bg-slate-800 dark:text-white ">
