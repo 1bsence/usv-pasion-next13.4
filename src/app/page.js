@@ -30,26 +30,14 @@ export default function Orar() {
   let weeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
   let cursuri = orarJ[ziua];
   useEffect(() => {
-    window.addEventListener("beforeinstallprompt", (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-    });
-    if (
-      window.navigator.standalone ||
-      window.matchMedia("(display-mode: standalone)").matches
-    ) {
-      installed = true;
-    } else {
-      installed = false;
-    }
+    
 
     cursuri = orarJ[ziua];
   }, [ziua, orarJ]);
-  // var [cursuri, changeCurs] = useState(orarJ[ziua]);
   return (
     <>
       <div className="flex justify-evenly items-center flex-wrap ">
-          {/* Orar Selection */}
+          {/* ---------------------- Orar Selection ----------------------*/}
           <select
             className="bg-white text-black dark:bg-slate-800 dark:text-white hover:bg-slate-100 hover:text-black w-20 h-7 text-lg border-none rounded-md m-5"
             name="selectOrar"
@@ -60,7 +48,7 @@ export default function Orar() {
             <option value={JSON.stringify(orar3211b)}>3221b</option>
             <option value={JSON.stringify(orar3211a)}>3221a</option>
           </select>
-          {/* Display Sapt  Selection */}
+          {/* -------------- Display Saptamana  Selection ---------------------*/}
           <h2 className="w-26 h-7 text-lg  bg-white text-black dark:bg-slate-800 dark:text-white ">
             Sapt:
           </h2>
@@ -81,8 +69,8 @@ export default function Orar() {
               </option>
             ))}
           </select>
-          {/* Display Install button */}
-          {!installed && (
+          {/* ------------------ Display Install button -------------------*/}
+          {/* {!installed && (
             <button
               onClick={() => {
                 try {
@@ -102,8 +90,11 @@ export default function Orar() {
             >
               Install app
             </button>
-          )}
-          {/* Day Selection */}
+          )} */}
+          {/*----------------------- Day Selection -----------------------*/}
+          <h2 className="w-26 h-7 text-lg  bg-white text-black dark:bg-slate-800 dark:text-white ">
+            Ziua:
+          </h2>
           <select
             className="bg-white text-black dark:bg-slate-800 dark:text-white hover:bg-slate-100 hover:text-black w-26 h-7 text-lg border-none rounded-md m-5"
             name="selectZi"
@@ -120,7 +111,7 @@ export default function Orar() {
             ))}
           </select>
         </div>
-        {/* Orar Display */}
+        {/*-------------------------- Orar Display --------------------------*/}
         <div className="flex flex-row flex-wrap justify-evenly items-center m-3 bg-white text-black dark:bg-slate-800 dark:text-white">
           {cursuri?.map((curs, index) => {
             if (week % 2 & (curs.special == "1")) {
