@@ -24,9 +24,10 @@ export default function Orar() {
   });
   var [week, changeWeek] = useState(() => {
     var startDate = new Date(date.getFullYear(), 10, 3);
-    var days = Math.floor((date - startDate) / (24 * 60 * 60 * 1000));
-    return Math.ceil(days / 7) + 5;
+    var days = Math.floor((startDate - date) / (24 * 60 * 60 * 1000));
+    return Math.ceil(days / 7);
   });
+  let weeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
   let cursuri = orarJ[ziua];
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
@@ -59,9 +60,25 @@ export default function Orar() {
             <option value={JSON.stringify(orar3211b)}>3221b</option>
             <option value={JSON.stringify(orar3211a)}>3221a</option>
           </select>
-          {/* Display Sapt */}
+          {/* Display Sapt  Selection */}
           <h2 className="w-26 h-7 text-lg  bg-white text-black dark:bg-slate-800 dark:text-white ">
-            Sapt: {week}
+            Sapt: <select
+            className="bg-white text-black dark:bg-slate-800 dark:text-white hover:bg-slate-100 hover:text-black w-26 h-7 text-lg border-none rounded-md m-5"
+            name="selectweek"
+            id="weekSelection"
+            onChange={(e) => {
+              changeWeek(e.target.value);
+              changeOrar((orarJ = orarJ))
+              changeZi((ziua = ziua))
+            }}
+          >
+            <option value={week}>{week}</option>
+            {weeks.map((w, index) => (
+              <option value={w} key={index}>
+                {w}
+              </option>
+            ))}
+          </select>
           </h2>
           {/* Display Install button */}
           {!installed && (
