@@ -2,7 +2,7 @@
 
 import { ExaCom } from "./ExaCom";
 
-const mate = new Date(2023, 6, 22);
+const SDED = new Date(2024, 1, 30);
 const pclp2 = new Date(2023, 6, 29);
 const pclp2_test2 = new Date(2023, 6, 7);
 const arca = new Date(2023, 7, 3);
@@ -12,7 +12,7 @@ export default function Examene() {
   return (
     <>
       <div className="flex justify-evenly items-center flex-wrap">
-        <ExaCom examen={mate} text="Mate" />
+        <ExaCom examen={SDED} text="SDED" />
         <ExaCom examen={pclp2} text="PCLP2" />
 
  <ExaCom examen={pclp2_test2} text="PCLP2 - Test" />
