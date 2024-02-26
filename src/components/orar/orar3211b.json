@@ -3,75 +3,51 @@
     {
       "ora": 8,
       "lungime": 2,
-      "tip": "sem",
-      "ce": "CEL1",
-      "unde": "C201",
-      "special": "1"
-    },
-    {
-      "ora": 10,
-      "lungime": 2,
-      "tip": "lab",
-      "ce": "CEL1",
-      "unde": "C201",
-      "special": "2"
-    },
-    {
-      "ora": 12,
-      "lungime": 2,
-      "tip": "lab",
-      "ce": "SuP",
-      "unde": "C407",
+      "tip": "CURS",
+      "ce": "MT",
+      "unde": "AULA",
       "special": "0"
     },
     {
-      "ora": 14,
-      "lungime": 2,
-      "tip": "STC",
-      "ce": "STC",
-      "unde": "0",
+      "ora": 10,
+      "lungime": 3,
+      "tip": "CURS",
+      "ce": "CEL2",
+      "unde": "Amf.RR",
       "special": "0"
     },
     {
       "ora": 16,
       "lungime": 3,
-      "tip": "curs",
-      "ce": "SDED",
-      "unde": "C301",
+      "tip": "CURS",
+      "ce": "TS2",
+      "unde": "Amf.RR",
       "special": "0"
     }
   ],
   "marti": [
     {
-      "ora": 8,
-      "lungime": 2,
-      "tip": "lab",
-      "ce": "FIZ2",
-      "unde": "C405",
-      "special": "1"
-    },
-    {
       "ora": 10,
       "lungime": 2,
-      "tip": "lab",
-      "ce": "PCLP3",
-      "unde": "C203",
+      "tip": "LAB",
+      "ce": "MN",
+      "unde": "C301",
       "special": "0"
     },
     {
-      "ora": 12,
+      "ora": 14,
       "lungime": 2,
-      "tip": "curs",
-      "ce": "SuP",
-      "unde": "C407",
+      "tip": "CURS",
+      "ce": "ED",
+      "unde": "AULA",
       "special": "0"
     },
     {
       "ora": 16,
       "lungime": 2,
-      "tip": "lab",
-      "ce": "SDED",
-      "unde": "C301",
+      "tip": "CURS",
+      "ce": "ED",
+      "unde": "AULA",
       "special": "0"
     }
   ],
@@ -79,51 +55,59 @@
     {
       "ora": 8,
       "lungime": 2,
-      "tip": "curs",
-      "ce": "Peda2",
-      "unde": "A112",
+      "tip": "LAB",
+      "ce": "LASM",
+      "unde": "C407",
       "special": "0"
     },
     {
-      "ora": 15,
-      "lungime": 3,
-      "tip": "curs",
-      "ce": "TS1",
-      "unde": "A103",
-      "special": "0"
+      "ora": 10,
+      "lungime": 2,
+      "tip": "LAB",
+      "ce": "CEL2",
+      "unde": "C109",
+      "special": "1"
     },
     {
-      "ora": 18,
-      "lungime": 3,
-      "tip": "curs",
-      "ce": "PCLP3",
-      "unde": "Aula",
-      "special": "0"
+        "ora": 10,
+        "lungime": 2,
+        "tip": "PR",
+        "ce": "CEL2",
+        "unde": "C109",
+        "special": "2"
+    },
+    {
+        "ora": 12,
+        "lungime": 2,
+        "tip": "SEM",
+        "ce": "DS",
+        "unde": "A121",
+        "special": "0"
     }
   ],
   "joi": [
     {
-      "ora": 9,
+      "ora": 10,
       "lungime": 2,
-      "tip": "lab",
-      "ce": "TS1",
-      "unde": "C101",
+      "tip": "CURS",
+      "ce": "LASM",
+      "unde": "ED042",
       "special": "0"
     },
     {
-      "ora": 11,
-      "lungime": 3,
-      "tip": "curs",
-      "ce": "CEL1",
-      "unde": "A103",
+      "ora": 12,
+      "lungime": 2,
+      "tip": "CURS",
+      "ce": "DS",
+      "unde": "A121",
       "special": "0"
     },
     {
       "ora": 14,
       "lungime": 2,
-      "tip": "sem",
-      "ce": "Peda2",
-      "unde": "A112",
+      "tip": "CURS",
+      "ce": "MN",
+      "unde": "D106",
       "special": "0"
     }
   ],
@@ -131,18 +115,34 @@
     {
       "ora": 8,
       "lungime": 2,
-      "tip": "curs",
-      "ce": "FIZ2",
-      "unde": "ED042",
+      "tip": "LAB",
+      "ce": "TS2",
+      "unde": "C101",
       "special": "0"
     },
     {
-      "ora": 14,
+      "ora": 10,
       "lungime": 2,
-      "tip": "sem",
-      "ce": "EdFiz2",
-      "unde": "Bazin",
-      "special": "1"
-    }
+      "tip": "LAB",
+      "ce": "MT",
+      "unde": "C104",
+      "special": "0"
+    },
+    {
+        "ora": 12,
+        "lungime": 2,
+        "tip": "SEM",
+        "ce": "EdFiz2",
+        "unde": "BAZIN",
+        "special": "2"
+      },
+      {
+        "ora": 16,
+        "lungime": 2,
+        "tip": "LAB",
+        "ce": "ED",
+        "unde": "C302",
+        "special": "0"
+      }
   ]
 }
