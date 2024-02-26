@@ -25,7 +25,7 @@ export default function Orar() {
   var [week, changeWeek] = useState(() => {
     var startDate = new Date(2024, 2, 26);
     var weeks = Math.floor((date - startDate) / (7 * 24 * 60 * 60 * 1000));
-    return weeks;
+    return weeks + 6;
   });
   let weeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
   let cursuri = orarJ[ziua];
